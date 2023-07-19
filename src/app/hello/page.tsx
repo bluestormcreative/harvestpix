@@ -1,4 +1,6 @@
-export default async function Page() {
-  await new Promise((resolve) => setTimeout(resolve, 1000)); // artifical delay to test loading
+"use client";
+
+export default function Page() {
+  throw Error("yuck");
   return <div>Hi there</div>;
 }
